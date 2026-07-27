@@ -1241,8 +1241,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ec619b4609eeec4e88acbd5e30d4996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerContoller
-  vehicleSpeed: 10
-  turnSpeed: 0
+  vehicleSpeed: 25
+  turnSpeed: 70
   moveAction:
     m_Name: Move
     m_Type: 0
