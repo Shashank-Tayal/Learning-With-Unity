@@ -1,10 +1,12 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerContoller : MonoBehaviour
 {
 
     public float vehicleSpeed = 5.0f; 
     public float turnSpeed;
+    public InputAction moveAction;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
