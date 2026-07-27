@@ -13,6 +13,6 @@ public class PlayerContoller : MonoBehaviour
     {
         // This is where we will add player movement.
         // Forward Motion
-        transform.Translate(0, 0, 1);
+        transform.Translate(Vector3.forward);
     }
 }
