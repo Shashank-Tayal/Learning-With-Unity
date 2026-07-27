@@ -3,11 +3,13 @@ using UnityEngine.InputSystem;
 
 public class PlayerContoller : MonoBehaviour
 {
-
+    //Speed variables
     public float vehicleSpeed = 5.0f; 
     public float turnSpeed;
+
+    //Taking input
     public InputAction moveAction;
-    public Vector2 moveInput;
+    private Vector2 moveInput;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,7 +24,7 @@ public class PlayerContoller : MonoBehaviour
 
         moveInput = moveAction.ReadValue<Vector2>();
 
-        transform.Translate(Vector3.forward * Time.deltaTime * vehicleSpeed);
-        transform.Translate(Vector3.right * Time.deltaTime * turnSpeed);
+        transform.Translate(Vector3.forward * Time.deltaTime * vehicleSpeed * moveInput.y);
+        transform.Rotate(Vector3.up * Time.deltaTime * turnSpeed * moveInput.x);
     }
 }
