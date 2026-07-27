@@ -1227,6 +1227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ec619b4609eeec4e88acbd5e30d4996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerContoller
+  vehicleSpeed: 10
 --- !u!54 &2021611745
 Rigidbody:
   m_ObjectHideFlags: 0
