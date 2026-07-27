@@ -4,6 +4,7 @@ public class PlayerContoller : MonoBehaviour
 {
 
     public float vehicleSpeed = 5.0f; 
+    public float turnSpeed;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -17,5 +18,6 @@ public class PlayerContoller : MonoBehaviour
         // This is where we will add player movement.
         // Forward Motion
         transform.Translate(Vector3.forward * Time.deltaTime * vehicleSpeed);
+        transform.Translate(Vector3.right * Time.deltaTime * turnSpeed);
     }
 }
