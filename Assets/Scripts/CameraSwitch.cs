@@ -4,7 +4,7 @@ public class CameraSwitch : MonoBehaviour
 {
     public Camera cameraOne;
     public Camera cameraTwo;
-    public KeyCode switchKey = KeyCode.C;
+    public KeyCode switchKey;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

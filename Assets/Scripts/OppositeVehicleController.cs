@@ -3,6 +3,7 @@ using UnityEngine;
 public class OppositeVehicleController : MonoBehaviour
 {
     public float speed = 20;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
